@@ -20,15 +20,16 @@ header {
 }
 
 header h1 {
-    padding: 0.5em 0 0.75em;
+   
     max-width: 15em;
 }
 
-a:hover {
-    color: #45478a;
+h1 {
+    width: 15em;
 }
 
-nav ul li a:hover {
+
+a:hover, nav ul li a:hover {
     color: #45478a;
 }
 
@@ -76,8 +77,17 @@ h2 {
     margin: 0 0.4em;
     padding-top: 0.2em;
     font-family: "neulis-neue", sans-serif;
-    font-weight: 600;
     font-style: normal;
+}
+
+h5 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #c39bc8;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    font-family: "neulis-neue", sans-serif;
+    font-style: normal;  
 }
 
 figcaption {
@@ -353,4 +363,33 @@ h3 {
 
 h4 {
     padding-bottom: 0.5em;
+}
+
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: #3f3f3f;
+    }
+
+    h1 {  
+        background-image: url("digitalmagazine_logo_darkmode.png");  
+        background-repeat: no-repeat;  
+        background-size: contain;  
+    }  
+
+    h1 img {  
+        opacity: 0;  
+    }  
+
+    p, figcaption, footer, a:hover, nav ul li a:hover, h2:hover {
+        color: #ddece9;
+    }
+
+    section.personal-info, section.checkbox {
+        background: #c39bc8;
+        }
+    
+    h2 {
+        color: #c39bc8;
+    }
 }
